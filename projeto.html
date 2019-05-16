@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!--Ajuda o navegador a processar a página, mas nada
+que o usuário veja de fato-->
+    <meta charset="utf-8"> <!--Define os caracteres a serem
+    usados no código-->
+    <title>New Webpage</title> <!--Define o título da página,
+    visto na aba do navegador-->
+    <style>/*Tag que anuncia o uso do css. Dentro dessa tag, adicionaremos regras para o estilo do css. É possível aplicar
+    um porpriedade à QUALQUER elemento do html*/
+     h1{
+        color: rgb(250, 241, 114);
+     }    
+    
+     h2 /*Seletor para dar propriedades, por meio das declarações, à todos os h2 da página. Anuncia-se o seletor e insere
+     as chaves em seguida*/ 
+     {
+        color: rgb(250, 241, 114); /* Aqui algo interessante acontece. A propriedade "color" por sí só é suficiente
+        para conseguirmos escolher uma cor (até aparecerá certas opções de escolha. No entnato, optando por inserir "rgb", 
+        temos uma possibilidade maior de escolha*/
+        font-size: 2em
+     }
+
+     body /*Para aplicar propriedades à toda a página*/
+     {
+        background-color: rgb(46, 196, 255);
+        font-size /*Essa propriedade, obviamente, altera o tamanho da fonte. Mas quais são os parâmetros para se aplicar?
+        Existem algumas muitas bastante mesmo
+        Pixels- (valor)px (Vale dizer que o estilo padrão para navegadores não é dito em pixel.É uma unidade diferente, 
+          chamada "em", uma unidade relativa que mantêm a proporção entre títulos e fonte do corpo)
+        */:11px 
+     }
+
+     .paragrafos /*O ponto sinaliza ao CSS que tudo que vier posteriormente é uma classe*/{
+         background-color: rgb(250, 241, 114);
+         font-family /*A propriedade font-family é responsável por modificar a fonte da tag em questão
+         No caso, à classe "paragrafos"*/
+         : "Helvetica", sans-serif;
+        /*Fonte "serif" aplica uns "pézinhos" na grafia das palavras*/
+        /*"Sans" aplica um valor de "não/sem"*/
+        /*Vale ressaltar que a fonte padrão, e a variação com ou sem serif vai variar de acordo com o padrão usado
+        pelo computador do cliente, não do autor. Para resolver esse problema, o autor deve especificar qual fonte
+        que que o cliente veja, já que o padrão varia de máquina para máquina
+        
+        Ainda assim, é possível que o computador do cliente não possua suporte para a fonte escolhida pelo editor.
+        Nesse caso, o CSS permite inserir uma fonte "backup". No exemplo acima, trata-se de " sans-serif"*/
+        /*sans-serif, serif, fantasy, monospace e cursive são fontes genéricas que são processadas por todos os computadores*/
+        font-weight /*A propriedade altera o comprimento da fonte. O valor a seguir definirá como negrito*/
+        : bold;
+        font-style: italic;
+        /*É possível fazer um bundle com as porpriedades de fonte na ordem: style,size,family (sem as vírgulas, chamada de
+        propriedades abreviadas)*/
+        line-height/*É uma propriedade que define o espaçamento vertical entre as linhas*/
+        :1.5em; /*150% do espaçamento do texto*/  
+        text-align/*Trata-se do alinhamento horizontal do texto*/
+        :center;
+        text-decoration/*Aplica ao texto alguma alteração direta*/
+        : underline; 
+     }
+
+     a{
+         text-decoration: none /*Remove do link o sublinhado*/;
+     }
+
+     #titulo-musica-belchior/*A hastag sinaliza ao CSS que tudo que vier posteriormente é uma ID*/{
+         background-color:rgb(129, 107, 255);
+         color: azure;
+         font: italic 30px helvetica; /*Aqui foi usado o bundle com as mesmas propriedades usadas na classe "paragrafos"*/
+     }
+
+     #link{
+         background-color: rgb(250, 241, 114);
+     }
+    </style>
+
+</head>
+   <body> <!--É nesta tag que está inserida todo o conteúdo visível pelo usuário-->
+    
+   <h1>The greatest title (About Nietzsche and greek gods)</h1> <!--A medida que vai diminuindo
+o coeficiente de h, o tamanho do que será escrito diminui-->
+
+   <p class="paragrafos">Sob a ﬁgura desses dois deuses gregos, Nietzsche tece seu argumento de que essa contradição
+       entre os dois polos está
+presente em todos os homens, como símbolo intuitivo das duas forças que exercem, constantemente, pressão na experiência
+humana</p> <!--Define um parágrafo-->
+
+    <!--O conteúdo de uma tag refere-se ao que está entre a abertura e fechamento da mesma. Por exemplo:
+
+    "<p>  xxxxxxxxxxxxx  </p>"
+
+     <P> e </p> são tags referentes à paragrafos;
+     xxxxxxxxxxxxx é o conteúdo da tag;
+     "<p> xxxxxxxxxxxxx </p>" é o elemento p-->
+    
+    <h2>
+        Índice
+    </h2>
+    
+     <ul>
+        <li><a href="#titulo-musica-belchior">
+        <!--Quando utilizo a tag de link e especifico a url como uma id na minha página, na verdade estou
+        direcionando o link exatamente para essa parte da página a qual a id-->
+            Onde belchior se encontra com Nietzsche
+        </a>
+        </li>
+        <li><a href="#motivos">
+            Motivos por eu estar tão obcecado por Belchior
+        </a>
+        </li>
+        <li><a href="#musicas-favoritas">
+            As minhas três músicas favoritas(Neste específico recorte do espaço-tempo)
+        </a>
+        </li>
+    </ul>
+
+
+    <h2 id="titulo-musica-belchior">Onde Belchior se encontra com Nietzsche</h2>
+    <!--Na tag h2, acrescentei o atributo "id". Isso tem como principal função atribuir uma identidade
+    à essa tag específica, o que ajuda quando quiser aplicar propriedades de css em uma tag específica.
+    É importante lembrar que não se deve utilizar barra de espaço para nomear id's e que não é possível 
+    atribuir um mesmo ID à diferentes tag's-->
+    <p class="paragrafos">Mas trago de cabeça uma canção do rádio<br><!--Quebra de
+    linha. Não precisa de um fechamento já que não tem um conteúdo
+    inserido-->
+    <!--Class é um atributo que permite associar um elemento particular à um grupo. Basicamente, chamar várias tag's a partir
+    de um mesmo nome, não necessariamente id's. Também não é possível nomear classes usando barra de espaço-->
+    
+    Em que um antigo compositor baiano me dizia<br>
+    Tudo é divino tudo é maravilhoso<br>
+    Tenho ouvido muitos discos conversado com pessoas<br>
+    Caminhado meu caminho<br>
+    Papo, som, dentro da noite<br>
+    E não tenho <em>um amigo sequer</em><!-- A tag <em> enfatiza em itálico o conteúdo em questão--><br>
+    Que ainda acredite nisso não<br>
+    Tudo muda<br>
+    <strong>E com <em>toda</em> razão</strong><!--A tag <strong> enfatiza em negrito o conteúdo em questão.
+    É possível ainda inserir <em> em <strong> e vice-versa--></p>
+
+    <h2 id="motivos">Motivos por eu estar tão obcecado por Belchior</h2>
+    <ul> <!--É uma tag de lista "desordenada", (U.nordered L.ist)-->
+        <li> <!--Refere-se à um item da lista, (L.ist I.tem)-->
+            Porque é musicalmente interessante
+        </li>
+        <li>
+            Porque tem uma pegada filosófica e política
+        </li>
+        <li>
+            Porque estou em abstinência de conteúdos desse tipo
+        </li>
+
+    </ul>
+    
+    <h3 id="musicas-favoritas">As minhas três músicas favoritas (Neste específico recorte
+        do espaço-tempo)
+    </h3>
+    <ol><!--É uma tag de lista numerada, ordenada, (O.rdered L.ist)-->
+        <li>
+            Como nossos pais
+        </li>
+        <li>
+            Alucinação
+        </li>
+        <li>
+            Apenas um rapaz latino americano
+        </li>
+    </ol>
+
+    <img src="C:\Users\Eliene\Documents\Ciências da Computação UFBa\InfoJr\BelchiorAlucinacaoCover.png"
+    alt="Capa do álbum 'Alucinação', de autoria do cantor e compositor 'Belchior'."
+    width="160"
+    height="160"><br>
+    <!--A tag <img> é responsável por inserir uma imagem na página
+    (meio óbvio, não?). Para isso, é preciso inserir o endereço da imagem-->
+    <!--"src" é um atributo, que nada mais é que um pouco mais de informação dentro da tag. Nesse caso, refere-se à "source"-->
+    <!--"alt" é um atributo responsável por inserir um texto com a descrição da imagem (ALT.ernative image). É MUITO importante para o uso de
+    deficientes visuais. Garante a acessibilidade dos que não podem enxergar o conteúdo de ter acesso à ele (de certa forma)-->
+    <!--"width" é um atributo de redimensionamento da largura da imagem. Os parâmetros dos valores são dados em pixels-->
+    <!--"height" é um atributo de redimensionamento da altura, também utiliza pixels como parâmetros dos valores-->
+    <!--Se apenas "width" for usado (ou "height"), o computador processa a melhor proporção a ser exibida-->
+
+    <a id="link" href="C:\Users\Eliene\Documents\Ciências da Computação UFBa\Belchior-e-nietzsche.pdf" target="_blank">
+    <!--A tag "a" cria um link (remetendo-se à A.nchor, ancorando à outra página)-->
+    <!--O atributo "target" sinaliza ao html que queremos que a página a ser redirecionada pelo link será abeta em outra aba.
+    O valor "_blank" significa que a nova página criada será em branco-->
+     Veja um pouco mais de informação à respeito da relacão de Belchior e Nietzsche
+    <!--Aqui só está sendo exibido o texto que levará a outra página. O H.iperlink de fato será introduzido no atributo "href"
+    (H.iper REF.erence)-->
+    </a>
+
+    <table> <!--Tag usada para a criação de uma tabela (meio óbvio, não?)-->
+        <thead><!--Tag usada para definir um cabeçalho para manter os rótulos de cada coluna (Lembre-se de "head", o "t" vem de "table")-->
+            <tr><!--Tag usada para definir uma linha da tabela-->
+               <th><!--Tag usada para definir uma coluna-->
+                    Outros artistas que estou ouvindo
+               </th>
+               <th>
+                    Suas músicas que mais estou ouvindo
+               </th>
+               <th>
+                   Seus respectivos álbuns
+               </th>
+            </tr>
+        </thead>
+        <tbody> <!--Tag usada para inserir os dados da tabela-->
+            <tr>
+               <td><!--Tag usada para inserir os dados (T.able D.ata)-->
+                 Nick Cave & The Bad Seeds
+               </td>
+               <td>
+                   Distant Sky
+               </td>
+               <td>
+                   Skeleton Tree
+               </td>
+            </tr><!--Acaba de ser dado todas as informações de uma única linha-->
+            <tr>
+                <td>
+                    Melody's Echo Chamber
+                </td>
+                <td>
+                    Desert Horse
+                </td>
+                <td>
+                    Bon Voyage
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Solange
+                </td>
+                <td>
+                    Mad
+                </td>
+                <td>
+                    A seat at the Table
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tame Impala
+                </td>
+                <td>
+                    Canyons Sunrise Reprise
+                </td>
+                <td>
+                    InnerSpeaker (Collector's Edition)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
