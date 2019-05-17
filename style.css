@@ -1,0 +1,96 @@
+body{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     background-color: rgb(44, 44, 44);
+     color: white;
+}
+
+#main{
+    border: 4px solid white;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    font-weight: 50;
+    width: 500px;
+    margin: 10px auto;
+    color: white;
+    top: 70px;
+}
+
+#banner{
+    background-image: url("./background.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin: 10px auto 20px auto;
+}
+
+#menu ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li{
+    font-weight: 30;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.titulos{
+    padding: 20px;
+    border-top: 1px solid rgb(170, 170, 170);
+    width: 250px;
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 25px;
+    font-weight: 10;
+    color:rgb(255, 213, 166);
+}
+
+.frases{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#recomendacoes{
+    width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.autores{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#habilidades ul{
+    margin: 0 15%;
+}
+
+#habilidades ul li ul{
+    margin: 0px;
+}
+
+#sintese{
+    margin: 0px 15%;
+}
+
+.contato{
+    margin: 0px auto;
+    text-align: center;
+}
+
+.contato input{
+    margin: 0px auto 10px auto;
+
+}
+
+#social ul li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+}
